@@ -470,7 +470,7 @@ func (de *directoryEntry) Name() string {
 	if !de.IsDir() {
 		name = strings.TrimSuffix(name, ";1")
 		name = strings.TrimSuffix(name, ".")
-		name = strings.TrimPrefix(name, ".")
+		// name = strings.TrimPrefix(name, ".")
 	}
 	return name
 }
